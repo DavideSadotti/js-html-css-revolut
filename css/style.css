@@ -4,20 +4,91 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
 }
 
-nav ul{
-  display: inline-block;
+nav > div{
+  display: flex;
+  align-items: center;
 }
 
-nav li{
-  margin: 0 25px;
+nav img{
+  height: 50px;
 }
 
-.disNone{
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.nomeLista, .dropdown li, a{
+  color: #000000;
+  list-style: none;
+  font-size: 18px;
+  opacity: 0.6
+}
+
+.dropdown li{
+  margin: 5px;
+}
+
+.nomeLista:hover, li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu{
+  position: relative;
+  margin: 0 15px;
+}
+
+.dropdown{
+  border-radius: 10%;
+  box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px, rgb(0 0 0 / 8%) 0px 8px 16px 0px;
+  position: absolute;
+  z-index: 10;
   display: none;
+  padding: 15px;
+}
+
+.active{
+  display: block;
+}
+
+.activeClick{
+  display: block;
+}
+
+.clear{
+  opacity: 1;
+}
+
+button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.btnGray{
+  background-color: lightgray;
+}
+
+.btnBlack{
+  background-color: black;
+  color: white;
 }
